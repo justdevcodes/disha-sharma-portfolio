@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Disha Sharma | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(13,13,13,0.9);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 25px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4da6ff;
+}
+
+/* Prevent content hiding behind navbar */
+header {
+  padding-top: 80px;
+}
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0d0d0d;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      animation: fadeInDown 1s ease;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      font-size: 2rem;
+      border-bottom: 2px solid #333;
+      display: inline-block;
+    }
+
+    .fade {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+
+    .fade.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #1f1f1f;
+      padding: 10px 15px;
+      margin: 6px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .skills span:hover {
+      background: #4da6ff;
+      transform: scale(1.05);
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 25px;
+      margin: 20px 0;
+      border-radius: 12px;
+      transition: 0.4s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(77,166,255,0.2);
+    }
+
+    a {
+      color: #4da6ff;
+      text-decoration: none;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 15px;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #777;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+  </style>
+</head>
+
+<body>
+<nav class="navbar">
+  <div class="logo">Disha Sharma</div>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<header id="home">
+  <h1>Disha Sharma</h1>
+  <p>Senior Developer • 9+ Years • Flutter & Web Expert</p>
+</header>
+
+<section id="about" class="fade">
+  <h2>About Me</h2>
+  <p>
+    I am a Senior Software Developer with over 9+ years of experience delivering high-quality mobile and web applications. 
+    I specialize in building scalable, performant, and user-friendly products using Flutter and modern web technologies.
+  </p>
+
+  <br>
+
+  <p>
+    Over the years, I have worked on multiple production-level applications across industries including fitness, education, 
+    and e-commerce. My expertise lies in creating clean architectures, optimizing performance, and ensuring seamless user experiences.
+  </p>
+
+  <br>
+
+  <p>
+    I have strong hands-on experience with Firebase, REST APIs, real-time systems, and cross-platform development. 
+    I focus on writing maintainable code, improving app performance, and delivering products that scale efficiently.
+  </p>
+
+  <br>
+
+  <p>
+    I am passionate about solving real-world problems through technology and continuously improving my skills to stay aligned 
+    with modern development practices.
+  </p>
+</section>
+
+<section id="skills" class="fade">
+  <h2>Skills</h2>
+
+  <div class="skills">
+
+    <span>Flutter</span>
+    <span>Dart</span>
+    <span>React Native</span>
+    <span>JavaScript</span>
+    <span>TypeScript</span>
+
+    <span>Firebase</span>
+    <span>REST APIs</span>
+    <span>Realtime Databases</span>
+
+    <span>React.js</span>
+    <span>Next.js</span>
+    <span>Shopify Development</span>
+    <span>Web Development</span>
+    <span>Responsive Design</span>
+
+    <span>State Management (GetX, Bloc)</span>
+    <span>Clean Architecture</span>
+    <span>Performance Optimization</span>
+
+    <span>Git & GitHub</span>
+    <span>CI/CD</span>
+    <span>App Store Deployment</span>
+
+  </div>
+</section>
+
+<section id="projects" class="fade">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>King of the Curve (Quiz App)</h3>
+    <p>Built using Flutter & Firebase. A high-performance quiz platform.</p>
+    <div class="links">
+      <a href="https://apps.apple.com/us/app/mcat-king-of-the-curve/id1534662918" target="_blank">iOS</a>
+      <a href="https://play.google.com/store/apps/details?id=com.kingofthecurve.kingofthecurve" target="_blank">Android</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Stork Inmate Photo Sharing</h3>
+    <p>Photo sharing & printing platform with secure delivery.</p>
+    <div class="links">
+      <a href="https://apps.apple.com/in/app/stork-photo/id1623653337" target="_blank">iOS</a>
+      <a href="https://play.google.com/store/apps/details?id=com.orbision.stork_photography&gl=US" target="_blank">Android</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>ReGo Fitness Training App</h3>
+    <p>Fitness app focused on training, tracking, and performance.</p>
+    <div class="links">
+      <a href="https://apps.apple.com/us/app/rego-fitness/id6590629270" target="_blank">iOS</a>
+      <a href="https://play.google.com/store/apps/details?id=com.fitness.bar&hl=en_IN" target="_blank">Android</a>
+    </div>
+  </div>
+
+</section>
+
+<section id="contact" class="fade">
+  <h2>Contact</h2>
+  <p>Email: disha.sharma695@example.com</p>
+  <p>GitHub: <a href="https://github.com/justdevcodes">My Github</a></p>
+</section>
+
+<footer>
+  <p>© 2026 Disha Sharma</p>
+</footer>
+
+<script>
+  const faders = document.querySelectorAll('.fade');
+
+  const appearOptions = {
+    threshold: 0.2
+  };
+
+  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('show');
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
+
+</body>
+</html>
